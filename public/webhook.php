@@ -24,6 +24,7 @@ if (
     $userMessage = $event['message']['text'];
 
     // ตอบกลับ
+/*
     $replyToken = $event['replyToken'];
     $replyData = [
         'replyToken' => $replyToken,
@@ -48,6 +49,7 @@ if (
     $result = curl_exec($ch);
     error_log("LINE Reply result: " . $result);
     curl_close($ch);
+*/
 
     // เก็บ groupId ไว้ใน log เท่านั้น (ไม่เขียนไฟล์)
     error_log("Captured groupId: " . $groupId);
